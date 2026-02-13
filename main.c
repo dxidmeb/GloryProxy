@@ -26,12 +26,12 @@ void loadConfig() {
         fp = fopen("config.conf", "wb");
 
         userConfig.usingServerData = 1;
-        userConfig.serverDataIP = "2.17.198.162";
+        userConfig.serverDataIP = "52.44.105.194";
         userConfig.manualIP = "127.0.0.1";
         userConfig.manualPort = 17091;
         asprintf(&userConfig.manualMeta, "localhost");
         userConfig.usingNewPacket = 1;
-        userConfig.httpsPort = 443;
+        userConfig.httpsPort = 8080;
         userConfig.skipGazette = 1;
         userConfig.isSpoofed = 0;
 
