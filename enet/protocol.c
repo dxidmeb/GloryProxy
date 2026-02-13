@@ -1022,8 +1022,8 @@ enet_protocol_handle_incoming_commands (ENetHost * host, ENetEvent * event)
     {
       newHeader = (ENetNewProtocolHeader *) host -> receivedData;
 
-      if (0 > ENET_NET_TO_HOST_16(newHeader -> integrity[0]) > host -> address.port)
-        return 0;
+      //if (0 > ENET_NET_TO_HOST_16(newHeader -> integrity[0]) > host -> address.port)
+        //return 0;
       if ((ENET_NET_TO_HOST_16(newHeader -> integrity[1]) ^ host -> address.port) != ENET_NET_TO_HOST_16(newHeader -> integrity[0]))
         return 0;
       if ((ENET_NET_TO_HOST_16(newHeader -> integrity[1]) ^ ENET_NET_TO_HOST_16(newHeader -> integrity[0])) != host -> address.port)
